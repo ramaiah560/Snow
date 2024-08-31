@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For charting -->
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Analytics</h1>
+
+        <!-- Overall Assessment Performance -->
+        <section id="overall-performance">
+            <h2>Overall Assessment Performance</h2>
+            <canvas id="performanceChart"></canvas>
+            <p id="averageScore">Average Score: 78%</p>
+        </section>
+
+        <!-- Question-Level Analysis -->
+        <section id="question-analysis">
+            <h2>Question-Level Analysis</h2>
+            <div id="questionCharts">
+                <canvas id="question1Chart"></canvas>
+                <canvas id="question2Chart"></canvas>
+                <canvas id="question3Chart"></canvas>
+            </div>
+        </section>
+
+        <!-- Student Performance Trends -->
+        <section id="student-trends">
+            <h2>Student Performance Trends</h2>
+            <canvas id="studentTrendsChart"></canvas>
+        </section>
+
+        <!-- Feedback and Improvement Areas -->
+        <section id="feedback-improvement">
+            <h2>Feedback and Improvement Areas</h2>
+            <ul id="improvementAreas">
+                <li>Common mistakes in Question 3: Misunderstanding the concept of derivatives.</li>
+                <li>Struggles with time management, particularly in multi-step problems.</li>
+                <li>Need for better practice in statistical analysis techniques.</li>
+            </ul>
+        </section>
+
+        <!-- Export Reports -->
+        <section id="export-reports">
+            <h2>Export Reports</h2>
+            <button id="exportBtn">Export Analytics Report</button>
+        </section>
+
+        <!-- Comparison Tools -->
+        <section id="comparison-tools">
+            <h2>Comparison Tools</h2>
+            <label for="compareAssessments">Compare Assessments:</label>
+            <select id="compareAssessments">
+                <option value="assessment1">Assessment 1</option>
+                <option value="assessment2">Assessment 2</option>
+                <option value="assessment3">Assessment 3</option>
+            </select>
+            <button id="compareBtn">Compare</button>
+            <div id="comparisonResults">
+                <!-- Results will be displayed here after comparison -->
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
